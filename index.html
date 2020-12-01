@@ -1,134 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Primary Color: #3282B8 -->
-    <title>Ankit's Component Library</title>
+    <title>Ankit K Nag</title>
     <link href="style.css" rel="stylesheet" />
 </head>
-
 <body>
-    <h1> Welcome to Ankit Nag's component library!</h1>
-    <p>I am attending neog.camp and I am building a library which would make all my projects look good and consistent.
-    </p>
+    <!-- Navigation Bar -->
 
-    <hr />
-
-    <h2>@typography</h2>
-
-    <h1>This is the biggest heading.</h1>
-    <h2>This is the 2nd biggest heading.</h2>
-    <p>This is normal text. This is free flowing and will wrap at the end like a paragraph.</p>
-    <p>This paragraph will have a <strong>bold</strong> text</p>
-    <small>This is smaller text.</small>
-
-    <hr />
-
-    <h2>@container</h2>
-
-    <h3>fluid container</h3>
-    <div class="container-fluid">This is a fluid container and it will go to the end of the page</div>
-
-    <h3>center container</h3>
-    <div class="container container-center">This is a centered container and it will go to the specified width</div>
-
-    <hr />
-
-    <h2>@links</h2>
-
-    <a class="link link-primary" href="/">Primary Link</a>
-    <a class="link link-secondary" href="/">Secondary Link</a>
-
-    <hr />
-
-    <h2>@lists</h2>
-
-    <h3>Unordered list</h3>
-    <p>This list will not have the bullet</p>
-    <ul class="list-non-bullet">
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-    </ul>
-
-    <h3>Unordered inline list</h3>
-    <ul class="list-non-bullet">
-        <li class="list-item-inline">Item One</li>
-        <li class="list-item-inline">Item Two</li>
-        <li class="list-item-inline">Item Three</li>
-    </ul>
-
-    <h3>Reverse ordered list</h3>
-    <ol reversed>
-        <li>Veggies</li>
-        <li>Bread</li>
-        <li>Cheese</li>
-    </ol>
-
-    <hr />
-
-    <h2>@nav</h2>
     <nav class="navigation"> 
-        <div class="nav-brand">BrandName</div>
+        <div class="nav-brand">ANKIT.DEV</div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
                 <a class="link link-active" href="/">Home</a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="/">Projects</a>
+                <a class="link" href="projects.html">Projects</a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="/">About</a>
+                <a class="link" href="blogs.html">Blogs</a>
             </li>
         </ul>
     </nav>
 
-    <hr />
-
-    <h2>@header</h2>
+    <!-- Header -->
+    
     <header class="hero">
         <img class="hero-image" src="images/header-image.svg">
-        <h1 class="hero-heading">Ankit Nag, <span class="heading-inverted">Web Developer</span></h1>
+        <h1 class="hero-heading">Hi I am Ankit K Nag, a<span class="heading-inverted"> Web Developer</span></h1>
     </header>
 
-    <hr />
-
-    <h2>@section</h2>
-    
-    <section class="section">
-        <div class="container container-center">
-            <h1>white section</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </section>
+    <!-- Section 1 - Technologies -->
 
     <section class="section off-white">
         <div class="container container-center">
-            <h1>off white section</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h1>Technologies</h1>
+            <p class="align-center">I am familiar with various web development technologies such as - <strong>HTML5,CSS3,JavaScript,Git,Web Hosting</strong></p>
         </div>
     </section>
 
-    <hr />
 
-    <h2>@footer</h2>
+    <!-- Section 2- Projects -->
+
+    <section class="section">
+        <div class="container container-center">
+            <h1>Projects</h1>
+            <p class="align-center">I have worked on various projects on web development which are hosted online. Check them out at the link below!</p>
+            <a class="link link-primary" href="projects.html">BROWSE PROJECTS</a>
+        </div>
+    </section>
+
+    <!-- Section 3- Blogs -->
+
+    <section class="section off-white">
+        <div class="container container-center">
+            <h1>Blogs</h1>
+            <p class="align-center">I am working on a tech blog to share my learning journey.</p>
+            <a class="link link-primary" href="blogs.html">VISIT MY BLOG</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+
     <footer class="footer container">
-        <div class="footer-header">Some small heading inside footer</div>
+        <h1 class="footer-header">My online trail</h1>
         <!-- Do not use h1, h2 etc tags in footer -->
         <ul class="social-links list-non-bullet">
             <li class="list-item-inline">
-                <a class="link" href="/">socialOne</a>
+                <a class="link" href="https://github.com/Ankit-Nag">GitHub</a>
             </li>
             <li class="list-item-inline">
-                <a class="link" href="/">socialTwo</a>
+                <a class="link" href="https://twitter.com/ank_nag">Twitter</a>
             </li>
             <li class="list-item-inline"> 
-                <a class="link" href="/">socialThree</a>
+                <a class="link" href="https://www.instagram.com/ankitknag/">Instagram</a>
+            </li>
+            <li class="list-item-inline"> 
+                <a class="link" href="https://www.linkedin.com/in/ankitknag/">LinkedIn</a>
             </li>
         </ul>
     </footer>
-</body>
 
+</body>
 </html>

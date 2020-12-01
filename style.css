@@ -88,9 +88,9 @@ h2 {
 }
 
 .navigation .link-active {
-    background-color: var(--ghost-white);
-    color: var(--primary-color);
-    border-radius: 2rem;
+    border: 2px solid var(--ghost-white);
+    color: var(--ghost-white);
+    border-radius: 1rem;
     font-weight: bold;
 }
 
@@ -142,6 +142,11 @@ h2 {
 
 }
 
+.footer .footer-header{
+    font-weight: bold;
+    font-size: larger;
+}
+
 .footer .link{
     color: var(--ghost-white);
     text-align: center;
@@ -149,4 +154,10 @@ h2 {
 
 .footer ul{
     padding-inline-start: 0px;
+}
+
+/* Arbitrary */
+
+.align-center{
+    text-align: center;
 }
