@@ -38,8 +38,10 @@ h2 {
 
 /* Links */
 .link {
+    display: inline-block;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 0.75rem;
+    margin: 0.25rem;
 }
 
 .link-primary {
@@ -97,6 +99,7 @@ h2 {
 /* header */
 .hero {
     padding: 2rem;
+    padding-top: 4rem;
 }
 
 .hero .hero-image {
@@ -160,4 +163,5 @@ h2 {
 
 .align-center{
     text-align: center;
+    display: block; 
 }
