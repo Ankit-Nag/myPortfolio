@@ -32,7 +32,7 @@
     <div class="container-fluid">This is a fluid container and it will go to the end of the page</div>
 
     <h3>center container</h3>
-    <div class="container">This is a centered container and it will go to the specified width</div>
+    <div class="container container-center">This is a centered container and it will go to the specified width</div>
 
     <hr />
 
@@ -46,14 +46,22 @@
     <h2>@lists</h2>
 
     <h3>Unordered list</h3>
-    <ul>
+    <p>This list will not have the bullet</p>
+    <ul class="list-non-bullet">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
     </ul>
 
+    <h3>Unordered inline list</h3>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Item One</li>
+        <li class="list-item-inline">Item Two</li>
+        <li class="list-item-inline">Item Three</li>
+    </ul>
+
     <h3>Reverse ordered list</h3>
-    <ol>
+    <ol reversed>
         <li>Veggies</li>
         <li>Bread</li>
         <li>Cheese</li>
@@ -62,17 +70,17 @@
     <hr />
 
     <h2>@nav</h2>
-    <nav>
-        <div>BrandName</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="navigation"> 
+        <div class="nav-brand">BrandName</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
             </li>
-            <li>
-                <a href="/">Projects</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">Projects</a>
             </li>
-            <li>
-                <a href="/">About</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">About</a>
             </li>
         </ul>
     </nav>
@@ -80,35 +88,45 @@
     <hr />
 
     <h2>@header</h2>
-    <header>
-        <img src="images/header-image.svg">
-        <h1>heading inside header</h1>
+    <header class="hero">
+        <img class="hero-image" src="images/header-image.svg">
+        <h1 class="hero-heading">Ankit Nag, <span class="heading-inverted">Web Developer</span></h1>
     </header>
 
     <hr />
 
     <h2>@section</h2>
     
-    <section>
-        <h3>white section</h3>
-        <p>This will have a white background.</p>
+    <section class="section">
+        <div class="container container-center">
+            <h1>white section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
     </section>
 
-    <section>
-        <h3>off white section</h3>
-        <p>This will have a gray background.</p>
+    <section class="section off-white">
+        <div class="container container-center">
+            <h1>off white section</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
     </section>
 
     <hr />
 
     <h2>@footer</h2>
-    <footer>
-        <div>Some small heading inside footer</div>
+    <footer class="footer container">
+        <div class="footer-header">Some small heading inside footer</div>
         <!-- Do not use h1, h2 etc tags in footer -->
-        <ul>
-            <li>socialOne</li>
-            <li>socialTwo</li>
-            <li>socialThree</li>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="/">socialOne</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">socialTwo</a>
+            </li>
+            <li class="list-item-inline"> 
+                <a class="link" href="/">socialThree</a>
+            </li>
         </ul>
     </footer>
 </body>

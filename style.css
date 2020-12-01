@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
 
-:root{
-    --primary-color: #3282B8
+:root {
+    --primary-color: #3282B8;
+    --secondary-color: #30343F;
+    --off-white: #E4D9FF;
+    --space-blue: #1E2749;
+    --ghost-white: #FAFAFF;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+
+hr {
+    margin: 2rem 0rem;
 }
 
 h1 {
@@ -18,29 +27,126 @@ h2 {
 
 /* container */
 
-.container{
+.container {
     padding: 0rem 1rem;
 }
 
-.container-center{
+.container-center {
     max-width: 600px;
     margin: auto;
 }
 
 /* Links */
-.link{
+.link {
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
-.link-primary{
+.link-primary {
     background-color: var(--primary-color);
-    color: #f2f2f2;
+    color: var(--ghost-white);
     border-radius: 0.5rem;
 }
 
-.link-secondary{
+.link-secondary {
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
+}
+
+/* lists */
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/* navigation */
+.navigation {
+    background-color: var(--primary-color);
+    color: var(--ghost-white);
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0rem 1rem;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color: var(--ghost-white);
+}
+
+.navigation .link-active {
+    background-color: var(--ghost-white);
+    color: var(--primary-color);
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+/* header */
+.hero {
+    padding: 2rem;
+}
+
+.hero .hero-image {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.hero .hero-heading .heading-inverted {
+    color: var(--primary-color);
+}
+
+/* sections */
+
+.section{
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.off-white{
+    background-color: var(--off-white);
+}
+
+/* footers */
+
+.footer{
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    color: var(--ghost-white);
+
+}
+
+.footer .link{
+    color: var(--ghost-white);
+    text-align: center;
+}
+
+.footer ul{
+    padding-inline-start: 0px;
 }
