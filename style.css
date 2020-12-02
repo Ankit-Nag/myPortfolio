@@ -4,9 +4,10 @@
 :root {
     --primary-color: #3282B8;
     --secondary-color: #30343F;
-    --off-white: #E4D9FF;
+    --off-white: #D7DAE5;
     --space-blue: #1E2749;
     --ghost-white: #FAFAFF;
+    --gradient-blue: rgba(12,155,205,1);
 }
 
 body {
@@ -69,7 +70,8 @@ h2 {
 
 /* navigation */
 .navigation {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
+    background: linear-gradient(151deg, var(--primary-color) 0%, var(--gradient-blue));
     color: var(--ghost-white);
     padding: 1rem;
     border-bottom-left-radius: 10px;
@@ -105,7 +107,7 @@ h2 {
 
 .hero .hero-image {
     max-width: 350px;
-    max-height: 350px;
+    max-height: 250px;
     display: block;
     margin: auto;
 }
@@ -138,7 +140,8 @@ h2 {
 /* footers */
 
 .footer{
-    background-color: var(--primary-color);
+    background: var(--primary-color);
+    background: linear-gradient(151deg, var(--gradient-blue) 0%, var(--primary-color));
     padding: 2rem;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -166,4 +169,17 @@ h2 {
 .align-center{
     text-align: center;
     display: block; 
+}
+
+.justified{
+    text-align: justify;
+}
+
+.social-links a{
+    border-radius: 25%;
+}
+
+.social-links a:hover{
+    background-color: var(--ghost-white);
+    color: var(--primary-color);
 }
