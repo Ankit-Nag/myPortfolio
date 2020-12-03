@@ -5,7 +5,7 @@
     --primary-color: #3282B8;
     --secondary-color: #30343F;
     --off-white: #D7DAE5;
-    --space-blue: #1E2749;
+    --space-blue: #1e2449;
     --ghost-white: #FAFAFF;
     --gradient-blue: rgba(12,155,205,1);
 }
@@ -17,8 +17,6 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
 }
 
 hr {
@@ -51,19 +49,36 @@ h2 {
     padding: 0.75rem 0.75rem;
     margin-right: 0.25rem;
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
 }
 
 .link-primary {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: var(--ghost-white);
     border-radius: 0.5rem;
+    transition: border-radius 500ms, background-color 750ms;
+}
+
+.link-primary:hover{    
+    border-radius: 2rem;
+    background-color: var(--gradient-blue);
+    animation-name: button;
+    animation-duration: 1s;
+    transition: border-radius 500ms, background-color 750ms;
 }
 
 .link-secondary {
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
+    transition: border-radius 500ms;
+}
+
+.link-secondary:hover{
+    border-radius: 2rem;
+    animation-name: button;
+    animation-duration: 1s;
+    transition: border-radius 500ms;
 }
 
 /* lists */
@@ -101,7 +116,6 @@ h2 {
 }
 
 .navigation .link-active {
-    border: 2px solid var(--ghost-white);
     color: var(--ghost-white);
     border-radius: 1rem;
     font-weight: bold;
@@ -185,11 +199,16 @@ h2 {
 
 .social-links a{
     border-radius: 25%;
+    padding: 0.5rem
 }
 
 .social-links a:hover{
     background-color: var(--ghost-white);
     color: var(--primary-color);
+    transition: background-color 500ms, color 100ms;
+    border-radius: 2rem;
+    padding: 0.40rem 0.5rem;
+    
 }
 
 ul{
