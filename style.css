@@ -10,13 +10,19 @@
     --gradient-blue: rgba(12,155,205,1);
 }
 
+html {
+    height: -webkit-fill-available;
+  }
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
 }
 
 hr {
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
 }
 
 h1 {
@@ -43,7 +49,9 @@ h2 {
     display: inline-block;
     text-decoration: none;
     padding: 0.75rem 0.75rem;
-    margin: 0.25rem;
+    margin-right: 0.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .link-primary {
@@ -101,7 +109,7 @@ h2 {
 
 /* header */
 .hero {
-    padding: 1rem;
+    padding: 1rem 0rem;
     padding-top: 4rem;
 }
 
@@ -113,9 +121,10 @@ h2 {
 }
 
 .hero .hero-heading {
+    display: block;
     font-size: 1.5rem;
     color: var(--secondary-color);
-    padding-top: 1rem;
+    padding-top: 2rem;
     text-align: center;
 }
 
@@ -147,8 +156,7 @@ h2 {
     border-top-left-radius: 10px;
     text-align: center;
     color: var(--ghost-white);
-
-}
+    }
 
 .footer .footer-header{
     font-weight: bold;
@@ -182,4 +190,9 @@ h2 {
 .social-links a:hover{
     background-color: var(--ghost-white);
     color: var(--primary-color);
+}
+
+ul{
+    margin: 0px;
+    padding-inline-start: 0px;
 }
