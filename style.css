@@ -194,7 +194,7 @@ h2 {
 }
 
 .justified{
-    text-align: justify;
+    text-align: justify !important;
 }
 
 .social-links a{
@@ -214,4 +214,8 @@ h2 {
 ul{
     margin: 0px;
     padding-inline-start: 0px;
+}
+
+p{
+    line-height: 1.5rem;
 }
