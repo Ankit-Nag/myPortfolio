@@ -56,13 +56,13 @@ h2 {
     background: var(--primary-color);
     color: var(--ghost-white);
     border-radius: 0.5rem;
-    box-shadow: 1px 1px 2px var(--secondary-color);
+    box-shadow: 1px 1px 2px var(--space-blue);
     transition: background-color 500ms, box-shadow 250ms;
 }
 
 .link-primary:hover{    
     background-color: var(--gradient-blue);
-    box-shadow: 1px 1px 3px 1px var(--secondary-color);
+    box-shadow: 2px 2px 5px var(--space-blue);
     transition: background-color 500ms, box-shadow 250ms;
 }
 
@@ -70,12 +70,13 @@ h2 {
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
+    box-shadow: 1px 1px 2px var(--space-blue);
     transition: box-shadow 250ms;
 }
 
 .link-secondary:hover{
-    box-shadow: 1px 1px 2px var(--secondary-color);
-    transition: background-color 500ms, box-shadow 250ms;
+    box-shadow: 2px 2px 5px var(--space-blue);
+    transition: box-shadow 250ms;
 }
 
 /* lists */
@@ -114,7 +115,6 @@ h2 {
 
 .navigation .link-active {
     color: var(--ghost-white);
-    border-radius: 1rem;
     font-weight: bold;
 }
 
