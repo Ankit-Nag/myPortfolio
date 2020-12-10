@@ -84,6 +84,12 @@ h2 {
     list-style: none;
 }
 
+.list-bulleted-small{
+    font-size: small;
+    margin: 0rem 2rem;
+    list-style: circle;
+}
+
 .list-item-inline {
     display: inline;
     padding: 0rem 0.5rem;
@@ -215,4 +221,28 @@ ul{
 
 p{
     line-height: 1.5rem;
+}
+
+/* Links inside blog content */
+.sub-link{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/* Image formatting */
+.content-image-right{
+    max-width: 300px;
+    max-height: 300px;
+    float: right;
+    border-radius: 1rem;
+    margin: 0.5rem 0rem;
+    margin-left: 1rem;
+}
+.content-image-left{
+    max-width: 300px;
+    max-height: 300px;
+    float: right;
+    border-radius: 1rem;
+    margin: 0.5rem 0rem;
+    margin-right: 1rem;
 }
