@@ -229,20 +229,33 @@ p{
     color: var(--secondary-color);
 }
 
-/* Image formatting */
+/* Image formatting for blog */
 .content-image-right{
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
     float: right;
     border-radius: 1rem;
     margin: 0.5rem 0rem;
     margin-left: 1rem;
 }
 .content-image-left{
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
     float: right;
     border-radius: 1rem;
     margin: 0.5rem 0rem;
     margin-right: 1rem;
+}
+
+/* formatting for blog posts */
+.blog-image{
+    max-width: 60vw;
+    display: block;
+    margin: auto;
+}
+
+.blog-post{
+    max-width: 80vw;
+    margin: auto;
+    padding: 0rem;
 }
