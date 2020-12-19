@@ -2,21 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 :root {
-    --primary-color: #3282B8;
-    --secondary-color: #30343F;
-    --off-white: #D7DAE5;
-    --space-blue: #1e2449;
+    --dark-green: #09C800;
+    --almost-black: #1C1C1E;
+    --gray: #45484a;
+    --highlight-green: #09D200;
+    --off-white: #DAFFED;
     --ghost-white: #FAFAFF;
-    --gradient-blue: rgba(12,155,205,1);
+    --gradient-black: rgba(17,17,17,1);
 }
 
 html {
     height: -webkit-fill-available;
+    background-color: var(--almost-black);
   }
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    color: var(--ghost-white);
 }
 
 hr {
@@ -50,32 +53,32 @@ h2 {
     margin-right: 0.25rem;
     margin-top: 0.5rem;
     margin-bottom: 0rem;
+    color: var(--highlight-green);
 }
 
 .link-primary {
-    background: var(--primary-color);
+    background: var(--highlight-green);
     color: var(--ghost-white);
     border-radius: 0.5rem;
-    box-shadow: 1px 1px 2px var(--space-blue);
+    box-shadow: 0px 0px 1px var(--dark-green);
     transition: background-color 500ms, box-shadow 250ms;
 }
 
-.link-primary:hover{    
-    background-color: var(--gradient-blue);
-    box-shadow: 2px 2px 5px var(--space-blue);
+.link-primary:hover{  
+    box-shadow: 0px 0px 2px 1px var(--dark-green);
     transition: background-color 500ms, box-shadow 250ms;
 }
 
 .link-secondary {
-    color: var(--primary-color);
+    color: var(--highlight-green);
     border-radius: 0.5rem;
-    border: 1px solid var(--primary-color);
-    box-shadow: 1px 1px 2px var(--space-blue);
+    border: 1px solid var(--highlight-green);
+    box-shadow: 0px 0px 1px var(--dark-green);
     transition: box-shadow 250ms;
 }
 
 .link-secondary:hover{
-    box-shadow: 2px 2px 5px var(--space-blue);
+    box-shadow: 0px 0px 5px var(--dark-green);
     transition: box-shadow 250ms;
 }
 
@@ -97,10 +100,12 @@ h2 {
 
 /* navigation */
 .navigation {
-    background: var(--primary-color);
-    background: linear-gradient(151deg, var(--primary-color) 0%, var(--gradient-blue));
-    color: var(--ghost-white);
+    background: var(--almost-black);
+    background: linear-gradient(151deg, var(--almost-black) 0%, var(--gradient-black));
+    color: var(--highlight-green);
     padding: 1rem 0.5rem;
+    border-bottom: 2px solid var(--dark-green);
+    box-shadow: 0px 1px 5px var(--dark-green);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
