@@ -2,16 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 :root {
-    --primary-color: #3282B8;
-    --secondary-color: #30343F;
-    --off-white: #D7DAE5;
-    --space-blue: #1e2449;
-    --ghost-white: #FAFAFF;
-    --gradient-blue: rgba(12,155,205,1);
+    --dark-green: #09C800;
+    --almost-black: rgba(28,28,30);
+    --white: rgba(209,209,214, 1);
+    --light-gray: rgba(174,174,178);
+    --dark-gray: rgba(58,58,60);
+    --highlight-green: #09D200;
+    --off-white: rgba(190,190,190,1);
+    --ghost-white: #F5F5F7;
+    --gradient-black: rgba(17,17,17,1);
 }
 
 html {
     height: -webkit-fill-available;
+    background: var(--white);
   }
 
 body {
@@ -19,8 +23,14 @@ body {
     margin: 0px;
 }
 
+.logo-akn{
+    margin: auto 1rem;
+    max-width: 5vw;
+}
+
 hr {
     margin: 1rem 0rem;
+    border: 1px solid var(--almost-black);
 }
 
 h1 {
@@ -50,32 +60,35 @@ h2 {
     margin-right: 0.25rem;
     margin-top: 0.5rem;
     margin-bottom: 0rem;
+    color: var(--highlight-green);
 }
 
 .link-primary {
-    background: var(--primary-color);
-    color: var(--ghost-white);
+    /* background: var(--highlight-green); */
+    color: var(--highlight-green);
+    background: var(--gradient-black);
+    border: 2px solid var(--gradient-black);
     border-radius: 0.5rem;
-    box-shadow: 1px 1px 2px var(--space-blue);
-    transition: background-color 500ms, box-shadow 250ms;
+    box-shadow: 0px 0px 1px var(--dark-green);
+    transition: box-shadow 250ms;
 }
 
-.link-primary:hover{    
-    background-color: var(--gradient-blue);
-    box-shadow: 2px 2px 5px var(--space-blue);
-    transition: background-color 500ms, box-shadow 250ms;
+.link-primary:hover{  
+    box-shadow: 0px 0px 7px var(--dark-green);
+    transition: box-shadow 250ms;
 }
 
 .link-secondary {
-    color: var(--primary-color);
+    color: var(--dark-green);
+    font-weight: bol;
     border-radius: 0.5rem;
-    border: 1px solid var(--primary-color);
-    box-shadow: 1px 1px 2px var(--space-blue);
+    border: 2px solid var(--highlight-green);
+    box-shadow: 0px 0px 1px var(--dark-green);
     transition: box-shadow 250ms;
 }
 
 .link-secondary:hover{
-    box-shadow: 2px 2px 5px var(--space-blue);
+    box-shadow: 0px 0px 7px var(--dark-green);
     transition: box-shadow 250ms;
 }
 
@@ -95,14 +108,28 @@ h2 {
     padding: 0rem 0.5rem;
 }
 
+.listing-portfolio{
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+}
+
+
 /* navigation */
 .navigation {
-    background: var(--primary-color);
-    background: linear-gradient(151deg, var(--primary-color) 0%, var(--gradient-blue));
-    color: var(--ghost-white);
+    z-index: 10000000;
+    background: var(--almost-black);
+    background: linear-gradient(151deg, var(--almost-black) 0%, var(--gradient-black));
+    color: var(--highlight-green);
     padding: 1rem 0.5rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    box-shadow: 0px 1px 5px 1px var(--dark-green);
+    transition: box-shadow 250ms;
+}
+
+.navigation:hover{
+    box-shadow: 0px 1px 15px 1px var(--dark-green);
+    transition: box-shadow 250ms;
 }
 
 .navigation .nav-brand {
@@ -116,18 +143,26 @@ h2 {
 }
 
 .navigation .link {
-    color: var(--ghost-white);
+    color: var(--dark-green);
+}
+
+.navigation .link:hover {
+    color: var(--highlight-green);
+
 }
 
 .navigation .link-active {
-    color: var(--ghost-white);
-    font-weight: bold;
+    color: var(--highlight-green);
+    font-weight: bold !important;
 }
 
 /* header */
 .hero {
+    position: relative;
+    z-index: -100;
     padding: 1rem 0rem;
     padding-top: 4rem;
+    background: linear-gradient(180deg,var(--off-white) 0%, var(--ghost-white) 40%,var(--white) 100%);
 }
 
 .hero .hero-image {
@@ -140,13 +175,13 @@ h2 {
 .hero .hero-heading {
     display: block;
     font-size: 1.5rem;
-    color: var(--secondary-color);
+    color: var(--gradient-black);
     padding-top: 2rem;
     text-align: center;
 }
 
 .hero .hero-heading .heading-inverted {
-    color: var(--primary-color);
+    color: var(--dark-green);
 }
 
 /* sections */
@@ -155,33 +190,51 @@ h2 {
     padding: 2rem;
 }
 
+
+
 .section h1 {
     text-align: center;
 }
 
 .off-white{
-    background-color: var(--off-white);
+   background-color: var(--light-gray);
+   transition: box-shadow 250ms;
+   position: relative;
+   z-index: 0;
 }
+
+.off-white:hover{
+    box-shadow: 0px 0px 10px 1px var(--dark-green);
+    transition: box-shadow 250ms;
+}
+
 
 /* footers */
 
 .footer{
-    background: var(--primary-color);
-    background: linear-gradient(151deg, var(--gradient-blue) 0%, var(--primary-color));
+    background-color: var(--almost-black);
+    background: linear-gradient(151deg, var(--almost-black) 0%, var(--gradient-black));
     padding: 2rem;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     text-align: center;
-    color: var(--ghost-white);
+    font-weight: lighter !important;
+    color: var(--highlight-green);
+    box-shadow: 0px -1px 5px 1px var(--dark-green);
+    transition: box-shadow 250ms;
     }
 
+.footer:hover{
+    box-shadow: 0px -1px 15px 1px var(--dark-green);
+    transition: box-shadow 250ms;
+}
+
 .footer .footer-header{
-    font-weight: bold;
     font-size: larger;
 }
 
 .footer .link{
-    color: var(--ghost-white);
+    color: var(--highlight-green);
     text-align: center;
 }
 
@@ -201,17 +254,16 @@ h2 {
 }
 
 .social-links a{
-    border-radius: 25%;
-    padding: 0.5rem
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.6rem;
+    transition: background-color 250ms, color 250ms, box-shadow 250ms;
 }
 
 .social-links a:hover{
-    background-color: var(--ghost-white);
-    color: var(--primary-color);
-    transition: background-color 500ms, color 100ms;
-    border-radius: 2rem;
-    padding: 0.40rem 0.5rem;
-    
+    color: var(--almost-black);
+    background-color: var(--dark-green);
+    box-shadow: 0px 0px 5px var(--dark-green);
+    transition: background-color 250ms, color 250ms, box shadow 250ms;
 }
 
 ul{
@@ -259,3 +311,4 @@ p{
     margin: auto;
     padding: 0rem;
 }
+
