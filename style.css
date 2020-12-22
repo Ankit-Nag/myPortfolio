@@ -25,7 +25,7 @@ body {
 
 .logo-akn{
     margin: auto 1rem;
-    max-width: 5vw;
+    max-width: 2rem;
 }
 
 hr {
@@ -116,7 +116,6 @@ h2 {
 
 /* navigation */
 .navigation {
-    z-index: 10000000;
     background: var(--almost-black);
     background: linear-gradient(151deg, var(--almost-black) 0%, var(--gradient-black));
     color: var(--highlight-green);
