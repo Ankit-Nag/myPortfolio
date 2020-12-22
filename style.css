@@ -8,19 +8,24 @@
     --light-gray: rgba(174,174,178);
     --dark-gray: rgba(58,58,60);
     --highlight-green: #09D200;
-    --off-white: #DAFFED;
-    --ghost-white: #FAFAFF;
+    --off-white: rgba(190,190,190,1);
+    --ghost-white: #F5F5F7;
     --gradient-black: rgba(17,17,17,1);
 }
 
 html {
     height: -webkit-fill-available;
-    background-color: var(--white);
+    background: var(--white);
   }
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+}
+
+.logo-akn{
+    margin: auto 1rem;
+    max-width: 5vw;
 }
 
 hr {
@@ -59,21 +64,23 @@ h2 {
 }
 
 .link-primary {
-    background: var(--highlight-green);
-    color: var(--ghost-white);
-    border: 2px solid var(--highlight-green);
+    /* background: var(--highlight-green); */
+    color: var(--highlight-green);
+    background: var(--gradient-black);
+    border: 2px solid var(--gradient-black);
     border-radius: 0.5rem;
     box-shadow: 0px 0px 1px var(--dark-green);
-    transition: background-color 500ms, box-shadow 250ms;
+    transition: box-shadow 250ms;
 }
 
 .link-primary:hover{  
-    box-shadow: 0px 0px 5px 1px var(--dark-green);
-    transition: background-color 500ms, box-shadow 250ms;
+    box-shadow: 0px 0px 7px var(--dark-green);
+    transition: box-shadow 250ms;
 }
 
 .link-secondary {
-    color: var(--highlight-green);
+    color: var(--dark-green);
+    font-weight: bol;
     border-radius: 0.5rem;
     border: 2px solid var(--highlight-green);
     box-shadow: 0px 0px 1px var(--dark-green);
@@ -81,7 +88,7 @@ h2 {
 }
 
 .link-secondary:hover{
-    box-shadow: 0px 0px 5px 1px var(--dark-green);
+    box-shadow: 0px 0px 7px var(--dark-green);
     transition: box-shadow 250ms;
 }
 
@@ -101,13 +108,19 @@ h2 {
     padding: 0rem 0.5rem;
 }
 
+.listing-portfolio{
+    padding: 0rem 1rem;
+    padding-bottom: 1rem;
+}
+
+
 /* navigation */
 .navigation {
+    z-index: 10000000;
     background: var(--almost-black);
     background: linear-gradient(151deg, var(--almost-black) 0%, var(--gradient-black));
     color: var(--highlight-green);
     padding: 1rem 0.5rem;
-    border-bottom: 2px solid var(--dark-green);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0px 1px 5px 1px var(--dark-green);
@@ -130,18 +143,26 @@ h2 {
 }
 
 .navigation .link {
-    color: var(--ghost-white);
+    color: var(--dark-green);
+}
+
+.navigation .link:hover {
+    color: var(--highlight-green);
+
 }
 
 .navigation .link-active {
-    color: var(--ghost-white);
-    font-weight: bold;
+    color: var(--highlight-green);
+    font-weight: bold !important;
 }
 
 /* header */
 .hero {
+    position: relative;
+    z-index: -100;
     padding: 1rem 0rem;
     padding-top: 4rem;
+    background: linear-gradient(180deg,var(--off-white) 0%, var(--ghost-white) 40%,var(--white) 100%);
 }
 
 .hero .hero-image {
@@ -154,13 +175,13 @@ h2 {
 .hero .hero-heading {
     display: block;
     font-size: 1.5rem;
-    color: var(--secondary-color);
+    color: var(--gradient-black);
     padding-top: 2rem;
     text-align: center;
 }
 
 .hero .hero-heading .heading-inverted {
-    color: var(--highlight-green);
+    color: var(--dark-green);
 }
 
 /* sections */
@@ -178,6 +199,8 @@ h2 {
 .off-white{
    background-color: var(--light-gray);
    transition: box-shadow 250ms;
+   position: relative;
+   z-index: 0;
 }
 
 .off-white:hover{
@@ -207,7 +230,6 @@ h2 {
 }
 
 .footer .footer-header{
-    font-weight: bold;
     font-size: larger;
 }
 
@@ -232,16 +254,16 @@ h2 {
 }
 
 .social-links a{
-    border-radius: 25%;
-    padding: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.6rem;
+    transition: background-color 250ms, color 250ms, box-shadow 250ms;
 }
 
 .social-links a:hover{
     color: var(--almost-black);
-    background-color: var(--highlight-green);
-    transition: background-color 500ms, color 100ms;
-    border-radius: 2rem;
-    padding: 0.40rem 0.5rem;
+    background-color: var(--dark-green);
+    box-shadow: 0px 0px 5px var(--dark-green);
+    transition: background-color 250ms, color 250ms, box shadow 250ms;
 }
 
 ul{
@@ -289,3 +311,4 @@ p{
     margin: auto;
     padding: 0rem;
 }
+
