@@ -211,6 +211,8 @@ h2 {
 /* footers */
 
 .footer{
+    position: relative;
+    z-index: 1;
     background-color: var(--almost-black);
     background: linear-gradient(151deg, var(--almost-black) 0%, var(--gradient-black));
     padding: 2rem;
